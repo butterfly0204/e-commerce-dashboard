@@ -40,6 +40,7 @@
     list-style: none;
     outline: 0;
     background: transparent;
+    border: none;
 }
 
 body{
@@ -175,13 +176,101 @@ h5{
 
 }
 
-
-/* =================main features ============================*/
-main{
+.sidebar_top a:hover, .sidebar_bottom a:hover{
+    transform: translateX(1rem);
     background: var(--color-gray-0);
-    padding:2rem;
+}
+
+.sidebar_top a i, .sidebar_bottom a i{
+    font-size: 1rem;
+    color: var(--color-gray-500);
+     
+}
+
+.sidebar_top a h5, .sidebar_bottom a h5{
+   color: var(--color-gray-500);
+  
+}
+
+.sidebar a.active{
+    background: var(--color-primary);
+    color: var(--color-gray-0);
+
 
 }
+.sidebar a.active i, .sidebar a.active h5{
+    color: var(--color-gray-0);
+}
+
+
+/* =================Nav  Bar ============================*/
+main{
+    width: 100%;
+   
+}
+.nav_bar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+.navbar_search{
+    background: var(--color-gray-0);
+    width: 35rem;
+    padding: 0.8rem;
+    border-radius: var(--radius-2);
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    gap: 0.5rem;  
+}
+.navbar_search input{
+   
+    width: 100%;
+    color: var(--color-gray-900);
+    background: transparent;
+
+}
+.navbar_items{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.navbar_items button{
+    background: var(--color-gray-0);
+    color: var(--color-gray-900);
+    padding: 0.8rem 1rem;
+    border-radius: var(--radius-2);
+}
+.navtheme_button{
+    font-size: 1rem;
+}
+.navbarxplore_btn{
+    margin-left: 0.8rem;
+    
+}
+
+.navbaritems_image{
+    width:2.6rem;
+    aspect-ratio: 1/1;
+    border-radius: var(--radius-2);
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
    
 
 
