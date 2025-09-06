@@ -58,7 +58,7 @@ body{
 
 }
 
-/* =================links feautures ============================*/
+/* =================links  ============================*/
 a{
     color:var(--color-gray-600);
     transition: var(--transition);
@@ -79,13 +79,13 @@ img{
     object-fit: cover;
 }
 
-/* =================heading feautures ============================*/ 
+/* =================heading features ============================*/ 
 h1, h2, h3, h4, h5 {
     color: var(--color-gray-900);
     font-weight: 600;
     line-height: 1.2;
 }
- /* =================heading feautures ============================*/
+ /* =================heading features ============================*/
 
 h1{
     font-size: 2.4rem;
@@ -246,9 +246,11 @@ main{
     padding: 0.8rem 1rem;
     border-radius: var(--radius-2);
 }
+
 .navtheme_button{
     font-size: 1rem;
 }
+
 .navbarxplore_btn{
     margin-left: 0.8rem;
     
@@ -425,25 +427,154 @@ table tbody tr div {
     background: var(--color-gray-50);
 }
 
+/**---------------------------- Top Categories------------------------**/
+.top_categories{
+    background:var(--color-gray-0) ;
+    max-width: 100%;
+    border-radius: var(--radius-2);
+    margin: 1.5rem 0 1rem;
+    padding: 1rem;
+    
+}
+.top_categories header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
 
+}
+.top_categories header i{
+    font-size: 1rem;
+}
 
+#Categories{
+    max-width: 100%;
+    margin-top: -2rem;
 
+}
 
+.top_categories ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin: 0.6rem 0;
 
+}
+.top_categories ul li{
+    display: flex;
+   justify-content: space-between;
+   align-items: center;
 
-
-
-
-
-
-
-
-
-
-
-
+}
+.top_categories ul li span{ 
+    width: 0.7rem;
+    aspect-ratio: 1/1;
+    background:#3c037e;
+    border-radius: 50%;
+     display: block;
    
 
+}
+
+.top_categories ul li:nth-child(2) span{ 
+    background: var(--color-purple);
+}
+
+.top_categories ul li:nth-child(3) span{  
+background: var(--color-success);
+}
+
+.top_categories ul li:nth-child(4) span{ 
+  background: var(--color-info);
+
+}
+
+.top_categories ul li div{ 
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+
+}
+
+.top_categories button{ 
+margin-top: 0.7rem;
+padding: 0.7rem;
+text-align: center;
+width: 100%;
+border-radius: var(--radius-1);
+background: var(--color-gray-50);
+color: var(--color-gray-900);
+}
+
+/**----------------------------upcoming events------------------------**/
+
+.next_Events{
+    background:var(--color-gray-0);
+    padding: 1rem;
+    border-radius: var(--radius-2);
+    
+}
+.next_Events header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+    
+}
+
+.next_Events header i{
+   font-size: 1rem;
+    
+}
+
+.next_Events_images{
+   margin: 1rem 0;
+   border-radius: var(--radius-2);
+   height: 10rem;
+    overflow: hidden;
+  
+    
+}
+.next_Events ul{
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  
+}
+
+.next_Events ul li{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  box-shadow: 0 0 1rem var(--color-gray-100);
+  padding: 0.5rem;
+  border-radius: var(--radius-2);
+    
+}
+.event_image {
+    width: 3rem;
+    aspect-ratio: 1/1;
+    border-radius: var(--radius-1);
+    overflow: hidden;
+
+}
+.next_Events button{
+    padding: 0.7rem;
+    text-align: center;
+    width: 100%;
+    border-radius: var(--radius-1);
+    background: var(--color-gray-50);
+    margin-top: 1rem;
+}
 
 
+
+
+ /****/
+ @media screen and (max-width:1024px) {
+    body{
+        .sidebar{
+            width: fit-content;
+        }
+    }
+    
+ }
